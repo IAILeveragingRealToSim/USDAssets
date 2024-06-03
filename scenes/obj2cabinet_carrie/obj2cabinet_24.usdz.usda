@@ -23,6 +23,8 @@
         string creator = "Three.js USDZExporter"
         dictionary omni_layer = {
             string authoring_layer = "./obj2cabinet_24.usdz.usd"
+            dictionary muteness = {
+            }
         }
         dictionary renderSettings = {
             float3 "rtx:debugView:pixelDebug:textColor" = (0, 1e18, 0)
@@ -56,9 +58,6 @@
     }
     defaultPrim = "World"
     doc = """Generated from Composed Stage of root layer /home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz
-
-
-Generated from Composed Stage of root layer /home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz.usd
 """
     metersPerUnit = 1
     upAxis = "Y"
@@ -268,7 +267,7 @@ def Xform "World" (
             def Shader "Texture_19_diffuse"
             {
                 uniform token info:id = "UsdUVTexture"
-                asset inputs:file = @/home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz[textures/Texture_19_ffffff.png]@
+                asset inputs:file = @./obj2cabinet_24.usdz[textures/Texture_19_ffffff.png]@
                 float2 inputs:st.connect = </World/Materials/Material_180/Transform2d_diffuse.outputs:result>
                 token inputs:wrapS = "repeat"
                 token inputs:wrapT = "repeat"
@@ -356,7 +355,7 @@ def Xform "World" (
             def Shader "Texture_31_diffuse"
             {
                 uniform token info:id = "UsdUVTexture"
-                asset inputs:file = @/home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz[textures/Texture_31_ffffff.png]@
+                asset inputs:file = @./obj2cabinet_24.usdz[textures/Texture_31_ffffff.png]@
                 float2 inputs:st.connect = </World/Materials/Material_193/Transform2d_diffuse.outputs:result>
                 token inputs:wrapS = "repeat"
                 token inputs:wrapT = "repeat"
@@ -382,7 +381,7 @@ def Xform "World" (
             def Shader "Texture_30_normal"
             {
                 uniform token info:id = "UsdUVTexture"
-                asset inputs:file = @/home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz[textures/Texture_30.png]@
+                asset inputs:file = @./obj2cabinet_24.usdz[textures/Texture_30.png]@
                 float2 inputs:st.connect = </World/Materials/Material_193/Transform2d_normal.outputs:result>
                 token inputs:wrapS = "repeat"
                 token inputs:wrapT = "repeat"
@@ -408,7 +407,7 @@ def Xform "World" (
             def Shader "Texture_29_occlusion"
             {
                 uniform token info:id = "UsdUVTexture"
-                asset inputs:file = @/home/carrieyuan/USDAssets/scenes/obj2cabinet_carrie/obj2cabinet_24.usdz[textures/Texture_29.png]@
+                asset inputs:file = @./obj2cabinet_24.usdz[textures/Texture_29.png]@
                 float2 inputs:st.connect = </World/Materials/Material_193/Transform2d_occlusion.outputs:result>
                 token inputs:wrapS = "repeat"
                 token inputs:wrapT = "repeat"
